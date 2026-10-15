@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "records": [
+    {
+      "id": "chain",
+      "label": "Network",
+      "state": "stated",
+      "value": "Solana",
+      "url": "https://solana-rpc.publicnode.com",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "contract",
+      "label": "Contract address",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "market-source",
+      "label": "Market feed",
+      "state": "stated",
+      "value": "DEX Screener",
+      "url": "https://api.dexscreener.com/token-boosts/top/v1",
+      "pairs": "https://api.dexscreener.com/tokens/v1/solana/{addresses}",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "cap",
+      "label": "Ceiling per buyer",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "identity",
+      "label": "Uniqueness check",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "window",
+      "label": "Round length",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "fee-split",
+      "label": "Platform fee threshold",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "supply-split",
+      "label": "Buyer supply share",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    },
+    {
+      "id": "price-unit",
+      "label": "Price per 1%",
+      "state": "absent",
+      "source": "client statement",
+      "scope": "batch-level",
+      "checked": "2026-10-15"
+    }
+  ]
+}

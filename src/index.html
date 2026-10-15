@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sheath | Even-handed token launches on Solana</title>
+<meta name="description" content="Sheath is a launch layer for Solana tokens: one price per slice for every arrival, one verified human behind every capped slot.">
+<meta name="theme-color" content="{{token:bg}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sheath | Even-handed token launches on Solana">
+<meta property="og:description" content="One price per slice. One verified human per capped slot.">
+<meta property="og:url" content="https://sheath.onl/">
+<meta property="og:image" content="https://sheath.onl/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sheath.onl/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/outfit-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<div id="progress" class="progress" aria-hidden="true"></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="top-row">
+    <a class="brand" href="#top" aria-label="Sheath, home">
+      <img class="logo" src="assets/logo-96.png" srcset="assets/logo-96.png 1x, assets/logo-192.png 2x" width="44" height="44" alt="">
+      <span class="brand-text"><strong>Sheath</strong><small>Even-handed launches on Solana</small></span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#principle">Principle</a>
+      <a href="#flow">Flow</a>
+      <a href="#market">Market</a>
+    </nav>
+    <div class="socials">{{social:x}}{{social:github}}</div>
+  </div>
+  <div class="ca-row">{{ca}}</div>
+</header>
+
+<div class="ticker" aria-label="Live market ticker">
+  <div class="ticker-in">
+    <span class="ticker-pill live-pill" data-live data-status="sync"><i class="dot" aria-hidden="true"></i><span data-live-text>Syncing</span></span>
+    <div class="ticker-view"><div id="ticker-track" class="ticker-track"><span class="tick-ph">Loading the market</span></div></div>
+  </div>
+</div>
+
+<nav class="subnav" aria-label="Sections, compact">
+  <a href="#principle">Principle</a>
+  <a href="#flow">Flow</a>
+  <a href="#market">Market</a>
+</nav>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="intro card spot" data-reveal>
+      <p class="kicker">Launch layer / Solana</p>
+      <h1>Every slot priced alike.</h1>
+      <p>Sheath treats a late arrival exactly like an early one: what a share costs depends on its size, never by order of arrival.</p>
+      <p>Every slot is meant for one verified human, so swarms of disposable wallets cannot quietly hoover up supply.</p>
+      <div class="cta">
+        <a class="solid" href="#flow">Follow the sequence</a>
+        <a class="ghost" href="#market">Watch the market</a>
+      </div>
+      <p class="count" data-record="cap" data-state="{{state:cap}}">{{value:cap}}</p>
+      <p class="count-note">Ceiling per human, per token</p>
+      <div class="track" aria-hidden="true"><span style="width:{{width:cap}}"></span></div>
+    </div>
+
+    <aside class="featured card spot" data-reveal aria-label="Overview">
+      <div class="stage" data-stage>
+        <div class="mesh" data-depth="0.25" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="ring" data-depth="0.55" aria-hidden="true"></div>
+        <img class="stage-logo" data-depth="1" src="assets/logo-512.png" width="512" height="512" alt="Sheath mark: a white drop between two mint leaves">
+        <span class="float f1" data-depth="1.7" aria-hidden="true">Solana</span>
+        <span class="float f2" data-depth="1.3" aria-hidden="true">One human, one slot</span>
+      </div>
+      <div class="stats">
+        {{stat:chain}}
+        {{stat:identity}}
+        {{stat:cap}}
+      </div>
+      <p class="featured-note"><span class="live-pill" data-live data-status="sync"><i class="dot" aria-hidden="true"></i><span data-live-text>Syncing</span></span> Market figures below arrive straight off the feed. Anything unstated reads pending.</p>
+    </aside>
+  </section>
+
+  <section class="why" id="principle">
+    <article class="model-card card spot" data-reveal>
+      <p class="kicker">Safeguards</p>
+      <h2>Guarded first, tokenised later.</h2>
+      <p>Funds stay parked off the ledger while a round gathers. Only after it closes does the token come into being and reach whoever qualified.</p>
+      <p>Bundling thrives on spreading money across many wallets. Sheath asks an identity provider to confirm each wallet maps to its own human, then puts a ceiling on allocation for every individual.</p>
+      <p>Verification runs within the identity provider's frame. Sheath gets just a verdict: no face, no surname, no paperwork.</p>
+    </article>
+
+    <div class="model-pair">
+      <article class="model-card card spot" data-reveal id="price">
+        <p class="kicker">Even pricing</p>
+        <h2>Equal slice, equal cost.</h2>
+        <figure class="same-price">
+          <div class="buyers" aria-hidden="true">
+            <div class="buyer"><span class="buyer-who">First in</span><div class="buyer-block"><strong>1 slice</strong><b>costs X</b></div></div>
+            <div class="buyer"><span class="buyer-eq">=</span><span class="buyer-who">Middle</span><div class="buyer-block"><strong>1 slice</strong><b>costs X</b></div></div>
+            <div class="buyer"><span class="buyer-eq">=</span><span class="buyer-who">Last in</span><div class="buyer-block"><strong>1 slice</strong><b>costs X</b></div></div>
+          </div>
+          <figcaption>
+            <span>Call the cost X: early, middle and late arrivals each pay X per slice.</span>
+            <span>Two slices cost double. Stacking halts once a human reaches the ceiling.</span>
+          </figcaption>
+        </figure>
+        <p class="chips">{{chip:price-unit}}</p>
+      </article>
+
+      <article class="model-card card spot" data-reveal id="flow">
+        <p class="kicker">Sequence</p>
+        <h2>Gather. Form. Hand over.</h2>
+        <ol class="steps">
+          <li class="spot"><span class="step-n">1</span><strong>Gather</strong><span>Commitments rest off-ledger as the round fills.</span></li>
+          <li class="spot"><span class="step-n">2</span><strong>Form</strong><span>A fresh token appears alongside the project token.</span></li>
+          <li class="spot"><span class="step-n">3</span><strong>Hand over</strong><span>Qualified participants collect a share.</span></li>
+        </ol>
+        <div class="rail" aria-hidden="true"><span class="rail-dot"></span></div>
+      </article>
+    </div>
+
+    <article class="model-card model-slim card spot" data-reveal>
+      <div>
+        <p class="kicker">Fees</p>
+        <h2>Fee shares are still being drafted.</h2>
+        <p>Platform and creator portions show up here after settlement.</p>
+        <p class="chips">{{chip:fee-split}}</p>
+      </div>
+      <div class="handoff" aria-hidden="true">
+        <div class="handoff-track"><span class="handoff-grow"></span><span class="handoff-mark"></span></div>
+        <div class="handoff-labels"><span>Platform</span><span>Project wallet</span></div>
+      </div>
+    </article>
+
+    <article class="model-card model-slim card spot" data-reveal>
+      <div>
+        <p class="kicker">Timing</p>
+        <h2>Round timing stays open.</h2>
+        <p>Round length plus the participant supply share remain pending until stated.</p>
+        <p class="chips">{{chip:window}}{{chip:supply-split}}</p>
+      </div>
+      <div class="beat" aria-hidden="true">
+        <div class="clock">
+          <svg viewBox="0 0 36 36"><circle class="clock-track" cx="18" cy="18" r="14"/><circle class="clock-progress" cx="18" cy="18" r="14"/></svg>
+          <b>&mdash;</b>
+        </div>
+        <div class="bal-demo"><span>Deposit</span><strong>Balance</strong><span>Withdraw</span></div>
+      </div>
+    </article>
+  </section>
+
+  <section class="board-grid" id="market">
+    <div class="board-main">
+      <section class="section card spot" data-reveal>
+        <p class="kicker">Open round</p>
+        <h2>Nothing is gathering yet.</h2>
+        <p class="meta">An active round shows up in this spot. <span class="pill">pending</span></p>
+      </section>
+      <section class="section card spot" data-reveal>
+        <p class="kicker">Completed</p>
+        <h2>Nothing handed over yet.</h2>
+        <p class="meta">Finished rounds get listed here. <span class="pill">pending</span></p>
+      </section>
+      <section class="section card spot" data-reveal>
+        <p class="kicker">Live market</p>
+        <h2>Top Solana tokens by volume</h2>
+        <p class="meta">Pulled from DEX Screener and ranked by traded volume. These are third-party tokens, not Sheath listings.</p>
+        <div class="bed-tools">
+          <label class="search"><span class="sr">Filter tokens</span><input id="bed-search" type="search" placeholder="Filter by name, ticker or address" autocomplete="off" spellcheck="false"></label>
+          <div class="bed-filters" role="group" aria-label="Direction">
+            <button class="ghost" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="ghost" type="button" data-filter="up" aria-pressed="false">Gainers</button>
+            <button class="ghost" type="button" data-filter="down" aria-pressed="false">Losers</button>
+          </div>
+        </div>
+        <p id="market-msg" class="notice" role="status" hidden></p>
+        <div class="mhead" aria-hidden="true"><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span><span></span></div>
+        <ul id="rows" class="rows is-loading" aria-live="polite">
+{{skeleton}}
+        </ul>
+        <p id="rows-empty" class="empty" hidden>Nothing fits that filter.</p>
+      </section>
+    </div>
+
+    <aside class="tape card spot" data-reveal aria-label="Movers">
+      <p class="kicker">Movers</p>
+      <h2>Biggest swings</h2>
+      <ul id="tape-list" class="tape-list">
+        <li class="tape-ph"><i class="sk sk-w"></i></li>
+        <li class="tape-ph"><i class="sk sk-w"></i></li>
+        <li class="tape-ph"><i class="sk sk-w"></i></li>
+        <li class="tape-ph"><i class="sk sk-w"></i></li>
+      </ul>
+    </aside>
+  </section>
+</main>
+
+<footer class="foot">
+  <img class="logo foot-logo" src="assets/logo-96.png" width="36" height="36" alt="">
+  <p class="foot-domain">sheath.onl</p>
+  <p>Market figures are informational and come from a third party. Nothing here counts as investment advice.</p>
+</footer>
+
+<script id="register-data" type="application/json">{{register}}</script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

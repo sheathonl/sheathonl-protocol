@@ -1,0 +1,173 @@
+$CONDOM in an open raise stays locked until that raise refunds or merges. If the raise misses the 2 hour window, the $CONDOM is returned.
+2% costs exactly twice that, up to 5%.
+A filled raise launches a Pump.fun coin paired with $CONDOM. Buyers receive those tokens at the wallet saved on their account.
+A real Pump.fun coin, paired with $CONDOM.
+A withdrawal cannot be sent until the mint and sender wallet are set.
+After that, 100% goes to the wallet the creator entered. They do nothing else.
+Back to every buyer
+Before a buy, save a receive wallet on your account. That address is where the tokens go after a merge. It is separate from the Human check. Saving it does not replace the check, and the check does not choose that wallet.
+Browser wallet
+Buyer allocation
+Buyers fill it here.
+Buyers were paid back in $CONDOM. Buys are closed.
+Buyers who were refunded
+Buys are final while the coin is open. If it does not merge within 2 hours, your $CONDOM is returned in full. Open coins cannot be sold here.
+Choose a wallet. The proof uses that wallet.
+Coins stay off-chain until the raise fills. Then a real Pump.fun coin paired with $CONDOM is launched, and the buyers get the tokens. Every 1% costs the same. Miss the 2 hours and the $CONDOM comes back.
+Condom asks for the Human check only before you buy a package. Depositing, withdrawing, and creating a coin do not ask for it.
+Connected as @
+Could not register
+Could not save the password
+Creation is free, and we cover the launch. The first $100 of creator fees stays with the platform. That is the only revenue.
+Creator fee wallet
+Deposit and withdraw $CONDOM with ease
+Enter a Solana address
+Every 1% costs the same $CONDOM at that moment. Buying early does not get a better price. Max 5% per coin. A second account cannot raise that on the same coin. The audience is already here before the coin hits Pump.fun.
+Every raise, from the most $CONDOM raised to the least.
+Everyone is the bundle.
+Filter raises
+First $100 to the platform
+First $100, then the creator.
+Five percent is the most one person can hold of a single coin. The cap is per coin, not for the whole site. The same person can buy up to 5% of a different coin.
+Human did not finish.
+Human does not send the contents of the KYC to Condom. We do not have access to them, so there is nothing from that check for us to keep, and nothing we can open later.
+Human explains the system in their docs: 
+Human is required before a buy.
+Human may try a small transaction on Optimism. If that transaction fails, a government-ID check you already finished still counts.
+Human verification is not configured.
+Human’s docs say the credential from that check is stored on your side, in the Human Wallet. That wallet is self-custodial. Other than you, nobody can open the credential.
+Human’s own write-up of the flow says the ID checker returns a session result, that result is encrypted on your side, and what Human keeps in its database is that encrypted result, which they describe as not personally identifying. That record stays with Human. It is not copied to Condom.
+If it does not merge, every buyer gets their $CONDOM back.
+Image upload is not configured yet.
+Incoming $CONDOM will be detected once the mint is set.
+Install MetaMask, then choose it here.
+Legal and terms
+Locked allocation
+Log in first. Creating spends $CONDOM from your balance. The creator fee wallet is typed here.
+Log in to get a deposit address that belongs only to you.
+Look around first
+Merged allocations
+Minified React error #
+Name or ticker
+No $CONDOM has arrived yet.
+No account is linked to that X. Register to create one.
+No activity yet.
+No coin is inside the 2 hour window.
+No merged allocation yet.
+No merged raise.
+No open position yet.
+No open raise
+No open raise.
+No packages yet.
+No raise matches that search.
+No raises yet.
+No refunded coin yet.
+No refunded raise.
+Objects are not valid as a React child (found: 
+Off-chain raise
+Open positions
+Open the 2 hour window
+Opening the board…
+Opening the raises.
+People who bought before the merge receive them.
+Phantom did not add OP Mainnet.
+Phantom is not on OP Mainnet.
+Phantom’s Ethereum account is not available.
+Price unavailable
+Price unavailable. New packages are paused.
+Prove with Human
+React.Children.only expected to receive a single React element child.
+Receive address
+Receive wallet
+Receive wallet saved.
+Recent actions
+Refunded coins
+Request failed
+Safety layer on Pump.fun
+Save a receive wallet on the desk before you buy. Merged tokens are sent there.
+Save password
+Save receive wallet
+Save the username and password. You will need both later to get back in.
+Set a username and password before you unlink X. You will need them to get back in.
+Set a username and password so you can get back in without X. Save both. You will need them later.
+Skipping view transition because document visibility state has become hidden.
+Skipping view transition because viewport size changed.
+Succeed, or a full refund.
+That X is already on an account. If it is yours, sign in with X.
+That coin is not on the board.
+That name is already taken.
+That package could not be bought.
+That transaction is not on Optimism.
+The $CONDOM contract is 
+The 2 hour window has closed
+The argument must be a React element, but you passed 
+The board could not be loaded
+The board could not complete that
+The board is empty. Create the first coin.
+The curve supply is sold out
+The first $100 of creator fees stays with the platform. Later creator fees go to the wallet entered when the coin was created.
+The price changed. Refresh and try that package again.
+The raise missed the 2 hours. Any $CONDOM was returned.
+The scan happens in Human’s window, 
+The uniqueness code is what ties those buys to one person. A second account that carries the same code cannot push the same coin past 5%.
+The wallet did not send the Optimism transaction.
+The window closed with no buys.
+The withdrawal was not sent. Your balance is unchanged.
+Then the creator wallet
+This X is the same price for each of them. Buying earlier does not make 1% cheaper.
+This coin expired. Buyers were refunded in $CONDOM.
+This coin fucks hard!
+This coin fucks hard! · 2 hour window
+This coin merged. The allocation is locked.
+This site watches the address and adds $CONDOM to your balance when it arrives.
+Those tokens were sent to the buyer wallets.
+Time left in the 2 hour window
+Time left to merge
+Token payout is pending. Nothing has been sent on-chain yet.
+Tokens to buyers
+Transition was aborted because of invalid state
+Use a name between 2 and 18 characters
+Use a password between 8 and 128 characters
+Use full balance
+Username or password is wrong
+Users suspected of coordinated buying and selling may be blocked from the platform without further notice.
+Verified as one person. Condom never receives any of your personal information, not your face, not your ID, and not your IP, read more at the bottom of the page
+View transition was skipped because document visibility state is hidden.
+Waiting on the live price
+Wallet address
+We eliminate malicious coin bundling by using Human (human.tech), a check that one person is one buyer. One person cannot use many accounts to buy more than 5% of the same coin. Human checks a government ID in Human's own window, and Condom receives only a uniqueness proof, not the face, name, or ID.
+We keep the coin off-chain until the raise fills, then launch a real Pump.fun coin paired with $CONDOM so the buyers from before the merge receive their tokens.
+What Condom receives
+What Human checks
+What we never get
+What you need in the wallet
+When the check is finished, Condom receives a uniqueness code, the time, and a verified flag. Those three things are what we store. The code is how we know the same person has come back. It is not your name, and it is not a copy of your identity.
+When you are asked
+X can be the account. If it already has one, you land in that account.
+X is optional. Buys show the X account that signed in. You can unlink it later. Your username and password still get you in.
+X login did not finish. You can try Connect X again.
+X login is not configured yet.
+You are not paying Condom for the check. Human does not bill Condom for it either.
+You can still buy 
+You have opened 
+You will never use pump.fun without a condom again
+Your ID stays with Human.
+Your deposit address appears here.
+Your deposit address is not ready yet.
+abort canplay canplaythrough durationchange emptied encrypted ended error loadeddata loadedmetadata loadstart pause play playing progress ratechange resize seeked seeking stalled suspend timeupdate volumechange waiting
+beforetoggle cancel close invalid load scroll scrollend toggle
+change click focusin focusout input keydown keyup selectionchange
+compositionend focusout keydown keypress keyup mousedown
+compositionstart focusout keydown keypress keyup mousedown
+compositionupdate focusout keydown keypress keyup mousedown
+empty empty-mark
+featured empty-mark
+focusout contextmenu dragend focusin keydown keyup mousedown mouseup selectionchange
+forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported
+ghost wallet-choice
+model-card model-slim
+mousedown mouseup touchcancel touchend touchstart auxclick dblclick pointercancel pointerdown pointerup dragend dragstart drop compositionend compositionstart keydown keypress keyup input textInput copy cut paste click change contextmenu reset
+noopener noreferrer
+panel human-page
+panel terms-page
+record refund

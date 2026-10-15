@@ -1,0 +1,53 @@
+/*
+  tokens.css - the only file in src/ allowed to hold colour literals.
+
+  Palette provenance. Every value is a real pixel snapped from a file in brand/ or reference/.
+  Method: k-means (k=6, seed 1, 25 iterations, 40000-pixel sample of alpha>0 pixels) per file,
+  centroid snapped to the nearest actual pixel; its first (x,y) hit is recorded below.
+
+  brand/LOGO SHEATH PNG...png   2000x2000 RGBA, IHDR colortype 6, bitdepth 8
+    alpha histogram: 3680976 px a=0, 298507 px a=255, 20517 px partial. All a=0 px are RGB(0,0,0),
+    so every resize is done on premultiplied data (see tools/build.mjs).
+    centroid 113,192,139 (38.8%) -> #71c08b @ 1283,1027
+    centroid 222,224,225 (21.5%) -> #dee0e1 @ 1140,721
+    centroid 245,245,247 (14.1%) -> #f5f5f7 @  986,592
+    centroid 202,205,207 (13.2%) -> #cacdcf @ 1082,774
+    centroid 149,223,173 (11.2%) -> #95dfad @  690,1015
+  brand/LOGO SHEATH JPG.jpg.jpeg  2000x2000 RGB (JPEG, no IHDR)
+    #5a7566 @ 1015,1355   (cluster centroid 90,118,102)
+  reference/SHEATH 1.jpg.jpeg   1600x900 RGB (JPEG)
+    #07080a @ 342,0   (49%, page ground)     #74dc9f @ 1191,477  (7%, accent)
+    #e5ebeb @ 1304,303 (4%, headline white)
+  reference/SHEATH 2.jpg.jpeg
+    #0c100f @ 80,0    (28%, panel ground)    #15211d @ 1504,31   (4%, tint)
+  reference/SHEATH 3.jpg.jpeg
+    #16251e @ 1233,287 (3%, hairline)        #32553f @ 125,850   (2%, strong hairline)
+  reference/SAMPUL SHEATH JPG.jpg.jpeg  1500x500 RGB (JPEG)
+    #0c0c0e @ 2,0     (53%, banner ground)
+*/
+:root {
+  --bg: #07080a;
+  --surface: #0c100f;
+  --tint: #15211d;
+  --line: #16251e;
+  --line-strong: #32553f;
+  --accent: #74dc9f;
+  --accent-hi: #95dfad;
+  --ink: #f5f5f7;
+  --ink-soft: #e5ebeb;
+  --muted: #cacdcf;
+  --quiet: #5a7566;
+  --on-accent: #07080a;
+  --banner-ground: #0c0c0e;
+
+  --logo-white: #f5f5f7;
+  --logo-grey: #cacdcf;
+  --logo-mint: #71c08b;
+  --logo-mint-hi: #95dfad;
+  --logo-shade: #dee0e1;
+
+  --tile-a: #15211d;
+  --tile-b: #16251e;
+  --tile-c: #32553f;
+  --tile-d: #5a7566;
+}
